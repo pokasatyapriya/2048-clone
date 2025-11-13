@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>2048 — GitHub Pages Demo</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="app">
+<div class="header">
+<div class="title">
+<h1>2048</h1>
+<p class="subtitle">Combine tiles to reach 2048</p>
+</div>
+<div class="controls">
+<div class="scoreboard">
+<div><small>Score</small><div id="score">0</div></div>
+<div><small>Best</small><div id="best">0</div></div>
+</div>
+<div class="buttons">
+<button id="newGame">New Game</button>
+<button id="undo">Undo</button>
+</div>
+</div>
+</div>
+<div class="game-area">
+<div id="grid" class="grid" aria-label="2048 game board" tabindex="0"></div>
+<div class="instructions">
+<h3>How to play</h3>
+<p>Use arrow keys or swipe to move tiles.</p>
+<p>When two tiles with the same number touch, they merge into one.</p>
+<p>Reach 2048 to win — keep going to get higher scores.</p>
+<p class="small">This clone saves your best score to <code>localStorage</code>.</p>
+</div>
+</div>
+<div class="footer">
+<p>Made for GitHub Pages • Vanilla JS • Responsive</p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
